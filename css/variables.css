@@ -1,0 +1,21 @@
+.color1 {
+  color: #249991;
+}
+.color2 {
+  color: #3b658a;
+}
+.color3 {
+  color: #ce5f5f;
+}
+.font1 {
+  font-family: 'Open Sans', sans-serif;
+}
+.bold {
+  font-weight: bold;
+}
+.bg-cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

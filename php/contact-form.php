@@ -7,7 +7,7 @@ header('Content-type: application/json');
 require 'php-mailer/class.phpmailer.php';
 
 // Your email address
-$to = 'you@domain.com';
+$to = 'enrique7mc@gmail.com';
 
 $subject = $_POST['subject'];
 
@@ -42,7 +42,7 @@ if($to) {
 	$mail->IsSMTP();                                      // Set mailer to use SMTP
 
 	// Optional Settings
-	$mail->Host = 'mail.enrique7mc.com';				  // Specify main and backup server
+	$mail->Host = 'box305.bluehost.com';				  // Specify main and backup server
 	$mail->SMTPAuth = true;                             // Enable SMTP authentication
 	$mail->Username = 'contacto@enrique7mc.com';             		  // SMTP username
 	$mail->Password = 'a<4ho!AZV9rs9';                         // SMTP password

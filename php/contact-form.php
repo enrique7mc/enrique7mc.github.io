@@ -15,7 +15,7 @@ if($to) {
 
 	$name = $_POST['name'];
 	$email = $_POST['email'];
-	
+
 	$fields = array(
 		0 => array(
 			'text' => 'Name',
@@ -30,24 +30,24 @@ if($to) {
 			'val' => $_POST['message']
 		)
 	);
-	
+
 	$message = "";
-	
+
 	foreach($fields as $field) {
 		$message .= $field['text'].": " . htmlspecialchars($field['val'], ENT_QUOTES) . "<br>\n";
 	}
-	
+
 	$mail = new PHPMailer;
 
 	$mail->IsSMTP();                                      // Set mailer to use SMTP
-	
+
 	// Optional Settings
-	//$mail->Host = 'mail.yourserver.com';				  // Specify main and backup server
-	//$mail->SMTPAuth = true;                             // Enable SMTP authentication
-	//$mail->Username = 'username';             		  // SMTP username
-	//$mail->Password = 'secret';                         // SMTP password
-	//$mail->Port       = 587;								// SMTP port
-	//$mail->SMTPSecure = 'tls';                          // Enable encryption, 'ssl' also accepted
+	$mail->Host = 'mail.enrique7mc.com';				  // Specify main and backup server
+	$mail->SMTPAuth = true;                             // Enable SMTP authentication
+	$mail->Username = 'contacto@enrique7mc.com';             		  // SMTP username
+	$mail->Password = 'a<4ho!AZV9rs9';                         // SMTP password
+	$mail->Port       = 465;								// SMTP port
+	$mail->SMTPSecure = 'ssl';                          // Enable encryption, 'ssl' also accepted
 
 	$mail->From = $email;
 	$mail->FromName = $_POST['name'];
@@ -55,7 +55,7 @@ if($to) {
 	$mail->AddReplyTo($email, $name);
 
 	$mail->IsHTML(true);                                  // Set email format to HTML
-	
+
 	$mail->CharSet = 'UTF-8';
 
 	$mail->Subject = $subject;
@@ -68,7 +68,7 @@ if($to) {
 	$arrResult = array ('response'=>'success');
 
 	echo json_encode($arrResult);
-	
+
 } else {
 
 	$arrResult = array ('response'=>'error');

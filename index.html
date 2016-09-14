@@ -1096,6 +1096,26 @@
                     <!-- Portfolio item -->
                     <div class="portfolio-item">
                       <!-- Link to the item image (Put the long description on  "a" title)-->
+                      <a href="img/react-chat.png" title="React Chat App" class="nivobox" data-lightbox-gallery="portfolio">
+                        <div class="hover">
+                          <p class="zoomi"><i class="fa fa-search"></i></p>
+                          <!-- Item short title -->
+                          <p class="portfolio-item-title"><strong>Messages</strong><br/>React JS App</p>
+                        </div>
+                        <div class="hover-bg-wrapper">
+                          <div class="hover-bg"></div>
+                        </div>
+                        <div class="portfolio-item-thumbnail">
+                          <!-- Thumbnail of the portfolio image (400x360 for retina display) -->
+                          <img src="img/reactjs-logo.png" alt="Logo Android">
+                        </div>
+                      </a>
+                    </div>
+                    <!-- /Portfolio item -->
+
+                    <!-- Portfolio item -->
+                    <div class="portfolio-item">
+                      <!-- Link to the item image (Put the long description on  "a" title)-->
                       <a href="img/notes.png" title="Note taking app featuring local storage and fragments" class="nivobox" data-lightbox-gallery="portfolio">
                         <div class="hover">
                           <p class="zoomi"><i class="fa fa-search"></i></p>
@@ -1124,104 +1144,6 @@
             <!-- /SECTION ITEM -->
           </section>
           <!-- ==>> /SECTION: PORTFOLIO -->
-
-          <!-- ====>> SECTION: CONTACT <<====-->
-          <section class="timeline" id="contact">
-
-            <!-- VERTICAL MARGIN (necessary for the timeline effect) -->
-            <div class="line row timeline-margin">
-              <div class="content-wrap">
-                <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-                <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height"></div>
-                <div class="col-md-9 bg1 full-height"></div>
-              </div>
-            </div>
-            <!-- /VERTICAL MARGIN -->
-
-            <!-- SECTION TITLE -->
-            <div class="line row">
-              <!-- Margin Collums (necessary for the timeline effect) -->
-              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-              <div class="col-md-2 timeline-progress hidden-sm hidden-xs timeline-title full-height"></div>
-              <!-- /Margin Collums -->
-              <!-- Item Content -->
-              <div class="col-md-8 content-wrap bg1">
-                <!-- Section title -->
-                <h2 class="section-title">Contact</h2>
-                <!-- /Section title -->
-              </div>
-              <!-- /Item Content -->
-              <!-- Margin Collum-->
-              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-              <!-- / Margin Collum-->
-            </div>
-            <!-- /SECTION TITLE -->
-
-            <!-- SECTION ITEM -->
-            <div class="line row">
-              <!-- Margin Collums (necessary for the timeline effect) -->
-              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-              <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-mail "></div>
-              <!-- /Margin Collums -->
-              <!-- Item Content -->
-              <div class="col-md-8 content-wrap bg1">
-                <div class="line-content contact-content">
-                  <!-- Subtitle -->
-                  <h3 class="section-item-title-1">Send me a message</h3>
-                  <!-- /Subtitle -->
-                  <!-- content -->
-                  <div class="row">
-                    <div class="col-md-8 contact-form-wrapper">
-                      <!-- Contact form -->
-                      <form id="contactForm" method="post" class="form" role="form">
-                        <!-- Form Field -->
-                        <div class="form-group">
-                          <input class="form-control required" id="name" name="name" placeholder="Name" type="text" required />
-                        </div>
-                        <!-- /Form Field -->
-                        <!-- Form Field -->
-                        <div class="form-group">
-                          <input class="form-control required" id="email" name="email" placeholder="Email" type="email" required />
-                        </div>
-                        <!-- /Form Field -->
-                        <!-- Form Field -->
-                        <div class="form-group">
-                          <input class="form-control required" id="subject" type="text" name="subject" placeholder="Subject" required>
-                        </div>
-                        <!-- /Form Field -->
-                        <!-- Form Field -->
-                        <div class="form-group">
-                          <textarea class="form-control required" id="message" name="message" placeholder="Message" rows="5" required></textarea>
-                        </div>
-                        <!-- /Form Field -->
-                        <!-- Form Field -->
-                        <div class="form-group">
-                          <input type="submit" class="btn btn-default form-send" value="Send!">
-                        </div>
-                        <!-- /Form Field -->
-                      </form>
-                      <!-- /Contact Form -->
-                    </div>
-                    <!-- Contact infos -->
-                    <div class="col-md-4 contact-infos">
-                      <h4 class="contact-subtitle-1">Location</h4>
-                      <p>Mexico City, Mexico</p>
-                      <h4 class="contact-subtitle-1">Mail</h4>
-                      <p>enrique7mc@gmail.com</p>
-                    </div>
-                    <!-- /Contact infos -->
-                  </div>
-                  <!-- /Content -->
-                </div>
-              </div>
-              <!-- /Item Content -->
-              <!-- Margin Collum-->
-              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-              <!--/ Margin Collum-->
-            </div>
-            <!-- /SECTION ITEM -->
-          </section>
-          <!-- ==>> /SECTION: CONTACT -->
 
           <!-- ====>> SECTION: THANK YOU <<====-->
           <section class="timeline profile-infos">
@@ -1278,39 +1200,6 @@
 <!-- /CONTENT
 ========================================================= -->
 
-<!-- Contact Form - Ajax Messages
-========================================================= -->
-<!-- Form Sucess -->
-<div class="form-result modal-wrap" id="contactSuccess">
-  <div class="modal-bg"></div>
-  <div class="modal-content">
-    <h4 class="modal-title"><i class="fa fa-check-circle"></i> Success!</h4>
-    <p>Your message has been sent.</p>
-  </div>
-</div>
-<!-- /Form Sucess -->
-<!-- form-error -->
-<div class="form-result modal-wrap" id="contactError">
-  <div class="modal-bg"></div>
-  <div class="modal-content">
-    <h4 class="modal-title"><i class="fa fa-times"></i> Error</h4>
-    <p>There was an error sending your message.</p>
-  </div>
-</div>
-<!-- /form-error -->
-<!-- form-sending -->
-<div class="form-result modal-wrap" id="contactWait">
-  <div class="modal-bg"></div>
-  <div class="modal-content">
-    <div class="modal-loader"></div>
-    <p>Sending Message, please wait...</p>
-  </div>
-</div>
-<!-- /form-sending -->
-
-<!-- Contact Form - Ajax Messages
-========================================================= -->
-
 <!-- Javascript Files
 ========================================================= -->
 <!-- jQuery (necessary for plugins) -->
@@ -1338,9 +1227,6 @@
 <!-- Carousel-->
 <script src="vendor/jquery.bxslider.min.js"></script>
 <!-- /Carousel -->
-<!-- Front-end Validator (for forms) -->
-<script src="vendor/jquery.validate.min.js"></script>
-<!-- /Front-end Validator -->
 <!-- placeholder Support for IE -->
 <script src="vendor/placeholders.jquery.min.js"></script>
 <!-- /placeholder support -->
